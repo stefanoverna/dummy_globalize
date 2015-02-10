@@ -1,5 +1,5 @@
 require "dummy_globalize/version"
 
-module DummyGlobalize
-  # Your code goes here...
+if defined?(ActiveRecord::Base)
+  require 'dummy_globalize/translates'
 end
